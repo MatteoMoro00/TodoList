@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost/Todo
+    username: postgres
+    password: razmataz
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
