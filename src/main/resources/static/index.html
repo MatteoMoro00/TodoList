@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/todo-list.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="toDoList-container">
+            <div class="title-container">
+                <img id="logo" src="./asset/logo.png" alt="logo">
+                <h1 id="main-title">Wat<span id="title-span">ToDo</span></h1>
+            </div>
+            
+            <div class="internal-container">
+                <div class="toDoList-input-container">
+                    <input id="toDoList-input" type="text" placeholder="Aggiungimi alla tua To Do List">
+                    <button id="add-button">
+                        <!--<img id="plus-icon" src="/asset/plus.png" alt="plus">-->
+                    </button>
+                    
+                </div>
+
+                <div id="div-error"><span id="error-message"></span></div>
+
+                <div class="container-dropdown">
+
+                    <select name="task-category" id="task-category">
+                        <!--<option id="generic" value="generic">Generic</option>-->
+                    </select>
+                    
+                </div>
+
+                <hr>
+
+                <div id="toDoList-list">  
+                    
+                </div>
+            </div>
+
+            <div id="count-container">
+                <hr>
+                <span>Tasks done: </span>
+                <span id="counter-task-done"></span>
+                <span> / </span>
+                <span>Total Tasks: </span>
+                <span id="counter-task"></span>
+            </div>
+
+            <div class="delete-all-container">
+                <button id="delete-all-button">DELETE ALL TASKS</button>
+            </div>
+
+        </div>
+    </div>
+    <!--<script src="/js/jquery-3.6.0.min.js"></script>-->
+    <script src="/js/todo-list.js"></script>
+</body>
+</html>

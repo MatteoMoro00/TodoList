@@ -1,0 +1,282 @@
+.container {  
+    width: 650px; 
+    margin: 0 auto;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    border-style: outset;
+}
+
+.toDoList-container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+}
+
+.title-container {
+    display: inline-flex;
+    margin-left: 100px;
+    padding-top: 20px;
+}
+
+#logo {
+    width: 125px;
+}
+
+#main-title {
+    text-align: center;
+    color: rgb(80, 136, 138);
+    padding-top: 10px;
+    font-family: 'Lobster';
+}
+
+#title-span {
+    font-family: 'Archivo Black';
+    font-size: 40px;
+    color: black;
+}
+
+.internal-container {
+    padding: 25px;
+}
+
+#toDoList-input { 
+    height: 35px;
+    width: 90%;
+    text-align: center;
+}
+
+#add-button {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    border: transparent;
+    background-image: url(/asset/plus.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.toDoList-input-container {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#plus-icon {
+    width: 100%;
+    display: block;
+}
+
+#div-error {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(161, 0, 0);
+    margin-top: -20px;
+    margin-bottom: 15px;
+}
+
+hr {
+    margin-bottom: 30px;
+}
+
+.task-content {
+    display: flex;
+    position: relative;
+    list-style: none;
+    font-style: italic;
+    margin-top: 20px;
+    /* height: 30px; */
+    min-height: 50px;
+    border: 1px solid grey;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-left: 6px solid gray;
+    background-color: white;
+    box-shadow: 5px 10px #88888852;
+}
+
+.task-content-border {
+    border-left: 6px solid gray;
+}
+
+ul {
+    position: relative;
+}
+
+#toDoList-list {
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+
+.input-div {
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.text-task-div {
+    width: 70%;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+span {
+    font-size: 12px;
+}
+
+.delete-button-div {
+    display: flex;
+    width: 20%;
+}
+
+.close-button-container {
+    display: flex;
+    width: 4em;
+    order: 2;
+}
+
+.close-button {
+    /*position: absolute;
+    right: 20px;
+    top: 20px;*/
+    /*width: 30px;
+    height: 30px;*/
+    margin: 0 auto;
+    order: 2;
+    font-size: larger;
+    color: rgb(200, 0, 0);
+    border: none;
+    background: transparent;
+    /*background-image: url(/asset/bin.png);
+    background-position: center;
+    background-size: contain;*/
+    /*opacity: 0;*/
+}
+
+.close-button:hover {
+    /*opacity: 100
+    transition: 1s;*/
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.checkbox {
+   float: left;
+   margin-right: 15px;
+   margin-left: 15px;
+   /*margin-top: 15px;*/
+   height: 20px;
+   width: 15px;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: grey;
+    width: 95%;
+    height: 95%;
+    font-size: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f5f5f5;
+    /*box-shadow: 0px 5px 15px inset rgb(200, 200, 200);*/
+    box-shadow: none;
+}
+
+.edit-button-container {
+    display: flex;
+    width: 4em;
+    order: 1;
+}
+
+.edit-button {
+    /*position: absolute;
+    right: 65px;
+    top: 20px;*/
+    order: 1;
+    font-size: larger;
+    border: none;
+    background: transparent;
+    color: rgb(43, 117, 146);
+    margin: 0 auto;
+}
+
+.edit-button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.input-edit {
+    width: 85%;
+}
+
+/*.hidden {
+    display: none;
+}*/
+
+.unconfirmed {
+    color: gray;
+}
+
+.error {
+    color: rgb(161, 0, 0);
+}
+
+/* select option */
+.container-dropdown {
+    display: flex;
+}
+
+select {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Shopping {
+    border-left: 6px solid rgb(199, 35, 191);
+}
+
+.Generic {
+    border-left: 6px solid gray;
+}
+
+.Work {
+    border-left: 6px solid #3f55cf;
+}
+
+.Sport {
+    border-left: 6px solid orange;
+}
+
+/* Contatore */
+#count-container {
+    padding-bottom: 5%;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: center;
+}
+
+#counter-task-done,
+#counter-task {
+    font-size: large;
+}
+
+/* Delete all */
+.delete-all-container {
+    padding-bottom: 5%;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: center;
+}
+
+#delete-all-button {
+    border: 1px solid #80808085;
+    background-color: transparent;
+}
+
+/* FONTS */
+@font-face {
+    font-family: Lobster;
+    src: url();
+}
